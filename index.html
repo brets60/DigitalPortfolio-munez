@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Digital Portfolio of Jechele Ane P. Muñez - BSIT Student and Aspiring Full-Stack Developer at Torres Capitol College, Inc.">
+  <title>Jechele Ane Muñez | BSIT Student & Aspiring Developer</title>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/profile.png">
+</head>
+<body>
+
+
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand" aria-label="Jechele Ane Muñez Portfolio">
+        <img src="assets/profile.png" alt="Jechele Ane Muñez" class="brand-avatar">
+        <span class="brand-text">Jechele <span>Muñez</span></span>
+        <span class="brand-badge">BSIT</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#learning" class="nav-link">Learning</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Desktop Nav Action Buttons -->
+      <div class="nav-actions">
+        <button class="btn btn-secondary btn-sm" id="open-resume-btn" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          View Resume
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">Get In Touch</a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <svg id="hamburger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg id="close-icon" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-nav-drawer" id="mobile-drawer">
+      <a href="#home" class="mobile-nav-link active">Home</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#learning" class="mobile-nav-link">Learning</a>
+      <a href="#education" class="mobile-nav-link">Education</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+      <div class="mobile-drawer-actions">
+        <button class="btn btn-secondary btn-sm" id="mobile-resume-btn" style="width: 100%;">View Resume</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="section hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-content fade-up-element">
+          <!-- Availability Badge -->
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Available for Internship & Software Projects</span>
+          </div>
+
+          <!-- Main Greeting -->
+          <h1 class="hero-title">
+            Hi, I'm <span class="name-highlight">Jechele Ane Muñez</span>
+          </h1>
+
+          <!-- Subtitle with Typing Animation -->
+          <p class="hero-subtitle">
+            <span id="typed-text">BSIT Student | Aspiring Full-Stack Developer</span>
+            <span class="typing-cursor">|</span>
+          </p>
+
+          <!-- Short Human Introduction -->
+          <p class="hero-intro">
+            I'm passionate about creating useful applications, learning new technologies, and turning ideas into simple and practical digital solutions.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              View My Projects
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary btn-lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Contact Me
+            </a>
+          </div>
+
+          <!-- Quick Fact Bar -->
+          <div class="hero-quick-facts">
+            <div class="quick-fact-item">
+              <span class="quick-fact-label">Program</span>
+              <span class="quick-fact-val">BS in Information Technology</span>
+            </div>
+            <div class="quick-fact-item">
+              <span class="quick-fact-label">College</span>
+              <span class="quick-fact-val">Torres Capitol College, Inc.</span>
+            </div>
+            <div class="quick-fact-item">
+              <span class="quick-fact-label">Location</span>
+              <span class="quick-fact-val">Bukidnon, Philippines</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual: Profile Photo Frame -->
+        <div class="hero-visual fade-up-element" style="transition-delay: 0.15s;">
+          <div class="profile-card-wrapper">
+            <div class="profile-card">
+              <div class="profile-image-container">
+                <img src="assets/profile.png" alt="Jechele Ane P. Muñez" loading="eager">
+              </div>
+              <div class="profile-footer">
+                <div class="profile-badge-left">
+                  <span class="profile-badge-name">Jechele Ane P. Muñez</span>
+                  <span class="profile-badge-role">BSIT Student & Developer</span>
+                </div>
+                <span class="profile-badge-school">Torres Capitol</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT ME SECTION
+       ========================================================================== -->
+  <section class="section section-alt" id="about">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header fade-up-element">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">A student developer building real, purposeful systems.</h2>
+        <p class="section-subtitle">A brief look into my background, academic mindset, and what drives me in tech.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: Narrative Text & Objective -->
+        <div class="about-narrative fade-up-element">
+          <p class="lead-paragraph">
+            I'm a Bachelor of Science in Information Technology student interested in software development, web development, databases, and emerging technologies. I enjoy building projects that solve real-world problems and help me improve my technical skills.
+          </p>
+
+          <p class="about-body-text">
+            Throughout my coursework and academic projects, I have cultivated a strong foundation in both front-end and back-end logic, database structuring, and application design. Rather than relying on hype or shortcuts, I focus on understanding fundamental concepts, writing clean code, and creating intuitive user experiences.
+          </p>
+
+          <!-- Career Objective Box (From actual resume) -->
+          <div class="objective-box">
+            <div class="objective-label">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+              Career Objective
+            </div>
+            <p class="objective-quote">
+              "To pursue a career in Information Technology, particularly in software development, where I can utilize my programming and problem-solving skills to develop effective and user-friendly applications while continuously improving my technical knowledge."
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Structured Information Card & Soft Skills -->
+        <div class="about-details-card fade-up-element" style="transition-delay: 0.15s;">
+          <h3 class="card-heading">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            Personal Profile
+          </h3>
+
+          <div class="info-list">
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="info-meta">
+                <span class="info-title">Education</span>
+                <span class="info-value">Bachelor of Science in Information Technology (BSIT)</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="info-meta">
+                <span class="info-title">Location</span>
+                <span class="info-value">P-4 Manlamonay, Don Carlos, Bukidnon</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="info-meta">
+                <span class="info-title">Field of Study</span>
+                <span class="info-value">Web Development & Database Systems</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="12 6 12 12 16 14"></polygon>
+                </svg>
+              </div>
+              <div class="info-meta">
+                <span class="info-title">Career Goal</span>
+                <span class="info-value">Aspiring Full-Stack Software Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills Chips -->
+          <div class="soft-skills-container">
+            <span class="soft-skills-title">Core Strengths & Soft Skills</span>
+            <div class="soft-skill-chips">
+              <span class="soft-chip">Problem Solving</span>
+              <span class="soft-chip">Critical Thinking</span>
+              <span class="soft-chip">Teamwork & Collaboration</span>
+              <span class="soft-chip">Communication Skills</span>
+              <span class="soft-chip">Time Management</span>
+              <span class="soft-chip">Adaptability</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SKILLS SECTION
+       ========================================================================== */ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header fade-up-element">
+        <span class="section-tag">Technical Skills</span>
+        <h2 class="section-title">Tools & technologies I work with.</h2>
+        <p class="section-subtitle">Real competencies gained from hands-on academic coursework, coding assignments, and system prototypes.</p>
+      </div>
+
+      <div class="skills-grid">
+        
+        <!-- Skill Category 1: Front-End & UI -->
+        <div class="skill-category-card fade-up-element">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="skill-cat-title">Front-End & UI</h3>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-pill-item">
+              <div class="skill-name-wrap">
+                <span class="skill-icon-mini">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4-3 12-5 4-5-4-3-12 8-4z"/></svg>
+                </span>
+                <span class="skill-name">HTML5</span>
+              </div>
+              <span class="skill-level-tag">Semantic Web</span>
+            </div>
+            <div class="skill-pill-item">
+              <div class="skill-name-wrap">
+                <span class="skill-icon-mini">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/></svg>
+                </span>
+                <span class="skill-name">CSS3</span>
+              </div>
+              <span class="skill-level-tag">Responsive Layouts</span>
+            </div>
+            <div class="skill-pill-item">
+              <div class="skill-name-wrap">
+                <span class="skill-icon-mini">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6z"/></svg>
+                </span>
+                <span class="skill-name">JavaScript</span>
+              </div>
+              <span class="skill-level-tag">DOM & Events</span>
+            </div>
+            <div class="skill-pill-item">
+              <div class="skill-name-wrap">
+                <span class="skill-icon-mini">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/></svg>
+                </span>
+                <span class="skill-name">UI/UX Design</span>
+              </div>
+              <span class="skill-level-tag">Wireframing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Category 2: Backend & Programming -->
+        <div class="skill-category-card fade-up-element" style="transition-delay: 0.1s;">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="skill-cat-title">Backend & Programming</h3>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-pill-item">
+              <div class="skill-name-wrap">
+                <span class="skill-icon-mini">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+                </span>
+                <span class="skill-name">Python</span>
+              </div>
+              <span class="skill-level-tag">Core & Scripting</span>
+            </div>
+            <div class="skill-pill-item">
+              <div class="skill-name-wrap">
+                <span class="skill-icon-mini">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/></svg>
+                </span>
+                <span class="skill-name">Flask</span>
+              </div>
+              <span class="skill-level-tag">Web Framework</span>
+            </div>
+            <div class="skill-pill-item">
+              <div class="skill-name-wrap">
+                <span class="skill-icon-mini">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                </span>
+                <span class="skill-name">SQL & Databases</span>
+              </div>
+              <span class="skill-level-tag">Queries & Schema</span>
+            </div>
+            <div class="skill-pill-item">
+              <div class="skill-name-wrap">
+                <span class="skill-icon-mini">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
+                </span>
+                <span class="skill-name">Java Programming</span>
+              </div>
+              <span class="skill-level-tag">OOP Concepts</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Category 3: Tools & Systems -->
+        <div class="skill-category-card fade-up-element" style="transition-delay: 0.2s;">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <h3 class="skill-cat-title">Tools & Systems</h3>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-pill-item">
+              <div class="skill-name-wrap">
+                <span class="skill-icon-mini">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v2a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"/><path d="M12 12v3"/></svg>
+                </span>
+                <span class="skill-name">Git & GitHub</span>
+              </div>
+              <span class="skill-level-tag">Version Control</span>
+            </div>
+            <div class="skill-pill-item">
+              <div class="skill-name-wrap">
+                <span class="skill-icon-mini">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                </span>
+                <span class="skill-name">Hardware & Networking</span>
+              </div>
+              <span class="skill-level-tag">Troubleshooting</span>
+            </div>
+            <div class="skill-pill-item">
+              <div class="skill-name-wrap">
+                <span class="skill-icon-mini">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </span>
+                <span class="skill-name">Software Testing</span>
+              </div>
+              <span class="skill-level-tag">Manual & Debugging</span>
+            </div>
+            <div class="skill-pill-item">
+              <div class="skill-name-wrap">
+                <span class="skill-icon-mini">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                </span>
+                <span class="skill-name">System Design</span>
+              </div>
+              <span class="skill-level-tag">Architecture Basics</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROJECTS SECTION
+       ========================================================================== -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-header fade-up-element">
+        <span class="section-tag">Featured Work</span>
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Real academic systems and functional prototypes developed to solve everyday practical challenges.</p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-card fade-up-element" data-project-id="speed-detection">
+          <div class="project-preview-bar">
+            <span class="project-cat-badge">Hardware & Python</span>
+            <div class="project-icon-art">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Speed Detection and Warning System</h3>
+            <p class="project-desc">
+              A prototype system designed to detect vehicle speed and provide warnings to help improve pedestrian safety.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Sensors</span>
+              <span class="tech-tag">Computer Vision</span>
+              <span class="tech-tag">Alert Modules</span>
+            </div>
+            <div class="project-card-action">
+              <button class="btn btn-secondary btn-sm btn-view-project" data-project="speed">
+                <span>View Project</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card fade-up-element" data-project-id="laundry-system" style="transition-delay: 0.1s;">
+          <div class="project-preview-bar">
+            <span class="project-cat-badge">Web Application</span>
+            <div class="project-icon-art">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="4" ry="4"></rect>
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="2" x2="12" y2="4"></line>
+              </svg>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Laundry Pickup and Delivery Management System</h3>
+            <p class="project-desc">
+              A web-based system designed to manage laundry orders, pickup schedules, deliveries, and payments.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">HTML/CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Flask / Python</span>
+              <span class="tech-tag">SQL Database</span>
+            </div>
+            <div class="project-card-action">
+              <button class="btn btn-secondary btn-sm btn-view-project" data-project="laundry">
+                <span>View Project</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card fade-up-element" data-project-id="breta-ai" style="transition-delay: 0.2s;">
+          <div class="project-preview-bar">
+            <span class="project-cat-badge">AI & Education</span>
+            <div class="project-icon-art">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z"></path>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+              </svg>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Breta AI</h3>
+            <p class="project-desc">
+              An English learning application designed to help users practice conversations, improve grammar, and develop better English communication skills.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">AI / NLP</span>
+              <span class="tech-tag">Interactive UI</span>
+              <span class="tech-tag">Grammar Engine</span>
+            </div>
+            <div class="project-card-action">
+              <button class="btn btn-secondary btn-sm btn-view-project" data-project="breta">
+                <span>View Project</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EXPERIENCE / LEARNING
+       ========================================================================== -->
+  <section class="section" id="learning">
+    <div class="container">
+      <div class="section-header fade-up-element">
+        <span class="section-tag">Continuous Growth</span>
+        <h2 class="section-title">What I've Been Learning</h2>
+        <p class="section-subtitle">A realistic look into my ongoing learning journey, technical focus areas, and skill development.</p>
+      </div>
+
+      <div class="learning-grid">
+        
+        <!-- Pillar 1 -->
+        <div class="learning-item fade-up-element">
+          <div class="learning-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <div class="learning-content">
+            <h3 class="learning-name">Full-Stack Web Development</h3>
+            <p class="learning-desc">
+              Building responsive frontend interfaces using HTML5, CSS3, and modern JavaScript, coupled with Python-backed server routing and API integrations.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="learning-item fade-up-element" style="transition-delay: 0.1s;">
+          <div class="learning-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16.5 9.4 7.55 4.24a1.78 1.78 0 0 0-2.5 1.55v12.42a1.78 1.78 0 0 0 2.5 1.55L16.5 14.6a1.78 1.78 0 0 0 0-3.2z"></path>
+            </svg>
+          </div>
+          <div class="learning-content">
+            <h3 class="learning-name">Python Development</h3>
+            <p class="learning-desc">
+              Writing structured, modular code, understanding object-oriented programming concepts, and using Python scripts for automation and data handling.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="learning-item fade-up-element" style="transition-delay: 0.15s;">
+          <div class="learning-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+          </div>
+          <div class="learning-content">
+            <h3 class="learning-name">Database Management</h3>
+            <p class="learning-desc">
+              Designing relational database schemas, writing structured SQL queries, understanding primary/foreign keys, and maintaining data integrity.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="learning-item fade-up-element" style="transition-delay: 0.2s;">
+          <div class="learning-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+              <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+              <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <div class="learning-content">
+            <h3 class="learning-name">AI Application Development</h3>
+            <p class="learning-desc">
+              Experimenting with Natural Language Processing (NLP) models and conversational interfaces to create accessible learning assistants like Breta AI.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 5 -->
+        <div class="learning-item fade-up-element" style="transition-delay: 0.25s;">
+          <div class="learning-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="3" y1="9" x2="21" y2="9"></line>
+              <line x1="9" y1="21" x2="9" y2="9"></line>
+            </svg>
+          </div>
+          <div class="learning-content">
+            <h3 class="learning-name">System Design</h3>
+            <p class="learning-desc">
+              Mapping out system flowcharts, user journeys, wireframes, and module responsibilities prior to implementation to ensure scalable architecture.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 6 -->
+        <div class="learning-item fade-up-element" style="transition-delay: 0.3s;">
+          <div class="learning-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 11 12 14 22 4"></polyline>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+            </svg>
+          </div>
+          <div class="learning-content">
+            <h3 class="learning-name">Software Testing</h3>
+            <p class="learning-desc">
+              Practicing manual functional testing, validating edge cases, checking cross-device responsiveness, and tracking down logic bugs in project builds.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hands-on Academic Practice Banner (From her actual resume) -->
+      <div class="academic-experience-banner fade-up-element">
+        <h4 class="academic-exp-title">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 14 14"></polyline>
+          </svg>
+          Academic Practical Experience
+        </h4>
+        <div class="academic-exp-list">
+          <div class="academic-exp-bullet">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Developed software and information technology projects as part of academic requirements.</span>
+          </div>
+          <div class="academic-exp-bullet">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Created and tested applications using programming languages and modern development tools.</span>
+          </div>
+          <div class="academic-exp-bullet">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Designed and managed relational databases for student and capstone software projects.</span>
+          </div>
+          <div class="academic-exp-bullet">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Performed basic troubleshooting of computer hardware, software, and system-related issues.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EDUCATION SECTION
+       ========================================================================== -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-header fade-up-element">
+        <span class="section-tag">Background</span>
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic timeline and references from Torres Capitol College, Inc.</p>
+      </div>
+
+      <div class="education-container">
+        
+        <!-- Left: Clean Minimal Timeline -->
+        <div class="timeline fade-up-element">
+          
+          <!-- Tertiary / College -->
+          <div class="timeline-item">
+            <div class="timeline-marker active"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2023 – 2027 (Expected)</span>
+              <h3 class="timeline-degree">Bachelor of Science in Information Technology</h3>
+              <p class="timeline-institution">Torres Capitol College, Inc.</p>
+              <div class="timeline-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                P2B Sayre Highway, Panadtalan, Maramag, Bukidnon
+              </div>
+              <p class="timeline-notes">
+                Focused on software development, web systems, database design, computer networks, and system integration.
+              </p>
+            </div>
+          </div>
+
+          <!-- Secondary / Senior High School -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Graduated: 2022 – 2023</span>
+              <h3 class="timeline-degree">Secondary Education (Senior High School)</h3>
+              <p class="timeline-institution">Kibatang National High School</p>
+              <div class="timeline-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Bukidnon, Philippines
+              </div>
+            </div>
+          </div>
+
+          <!-- Elementary -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Graduated: 2016 – 2017</span>
+              <h3 class="timeline-degree">Elementary Education</h3>
+              <p class="timeline-institution">Amparo Central Elementary School</p>
+              <div class="timeline-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Bukidnon, Philippines
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Academic References Card -->
+        <div class="references-card fade-up-element" style="transition-delay: 0.15s;">
+          <h3 class="card-heading">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            Academic References
+          </h3>
+
+          <div class="reference-list">
+            <!-- Reference 1 -->
+            <div class="reference-item">
+              <h4 class="ref-name">April Jean Villas</h4>
+              <p class="ref-role">Program Head, BSIT Department</p>
+              <p class="ref-org">Torres Capitol College, Inc. • Maramag, Bukidnon</p>
+              <p class="ref-contact">Phone: 0976 023 7827</p>
+            </div>
+
+            <!-- Reference 2 -->
+            <div class="reference-item">
+              <h4 class="ref-name">David Mark Ybañez</h4>
+              <p class="ref-role">BSIT Instructor</p>
+              <p class="ref-org">Torres Capitol College, Inc. • Maramag, Bukidnon</p>
+              <p class="ref-contact">Phone: 0926 466 2436</p>
+            </div>
+
+            <!-- Reference 3 -->
+            <div class="reference-item">
+              <h4 class="ref-name">Jessie Mae C. Jusayan</h4>
+              <p class="ref-role">BSIT Instructor</p>
+              <p class="ref-org">Torres Capitol College, Inc. • Maramag, Bukidnon</p>
+              <p class="ref-contact">Phone: 0997 136 5037</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header fade-up-element">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-subtitle">
+          I'm always interested in learning, building new projects, and connecting with people who share the same passion for technology.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Left: Direct Channels -->
+        <div class="contact-info-col fade-up-element">
+          
+          <div class="contact-channels">
+            <!-- Email Item -->
+            <div class="contact-channel-item">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="channel-content">
+                <span class="channel-label">Email Address</span>
+                <span class="channel-value" id="email-text">jechelemunez01@gmail.com</span>
+              </div>
+              <button class="channel-copy-btn" id="copy-email-btn" title="Copy Email">Copy</button>
+            </div>
+
+            <!-- Phone Item -->
+            <div class="contact-channel-item">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="channel-content">
+                <span class="channel-label">Mobile Phone</span>
+                <span class="channel-value">0992 217 8120</span>
+              </div>
+              <button class="channel-copy-btn" id="copy-phone-btn" title="Copy Phone">Copy</button>
+            </div>
+
+            <!-- Address Item -->
+            <div class="contact-channel-item">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="channel-content">
+                <span class="channel-label">Home Address</span>
+                <span class="channel-value">P-4 Manlamonay, Don Carlos, Bukidnon</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links-area">
+            <span class="social-links-label">Connect Online</span>
+            <div class="social-links-row">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                LinkedIn
+              </a>
+
+              <a href="https://www.facebook.com/share/1c71NN65RK/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+                Facebook
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Simple Human Contact Form -->
+        <div class="contact-form-card fade-up-element" style="transition-delay: 0.15s;">
+          <div class="form-header">
+            <h3 class="form-title">Send a Message</h3>
+            <p class="form-subtitle">Feel free to drop a message, inquire about my projects, or discuss internship opportunities.</p>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" name="name" class="form-control" placeholder="e.g. Maria Santos" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Your Email</label>
+              <input type="email" id="contact-email" name="email" class="form-control" placeholder="e.g. maria@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" name="message" class="form-control" placeholder="Hi Jechele, I'd like to get in touch regarding..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" id="submit-btn" style="width: 100%;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              Send Message
+            </button>
+
+            <!-- Friendly Client-side Status Banner -->
+            <div class="form-status-alert" id="form-status">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Thank you! Your message has been prepared. I will get back to you soon.</span>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-name">Jechele Ane P. Muñez</span>
+          <span class="footer-degree">Bachelor of Science in Information Technology • Torres Capitol College, Inc.</span>
+        </div>
+        
+        <div class="footer-social-icons">
+          <a href="mailto:jechelemunez01@gmail.com" class="footer-icon-link" title="Email Jechele" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-icon-link" title="LinkedIn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.facebook.com/share/1c71NN65RK/" target="_blank" rel="noopener noreferrer" class="footer-icon-link" title="Facebook" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Jechele Ane Muñez. All rights reserved.</p>
+        <button class="btn-back-to-top" id="back-to-top" type="button" aria-label="Back to Top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       PROJECT DETAILS MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-project-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-project-title">Project Overview</h3>
+        <button class="modal-close-btn" id="close-project-modal" aria-label="Close dialog">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-project-body">
+        <!-- Dynamic Content injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       RESUME & APPLICATION LETTER MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="resume-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-resume-title">
+    <div class="modal-container" style="max-width: 760px;">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-resume-title">Curriculum Vitae • Jechele Ane P. Muñez</h3>
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <button class="btn btn-secondary btn-sm" onclick="window.print()" type="button" title="Print Resume">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            Print
+          </button>
+          <button class="modal-close-btn" id="close-resume-modal" aria-label="Close dialog">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="resume-paper">
+          <!-- Resume Header -->
+          <div class="resume-header-block">
+            <h2>JECHELE ANE P. MUÑEZ</h2>
+            <div class="resume-contact-inline">
+              <span><strong>Phone:</strong> 09922178120</span>
+              <span>•</span>
+              <span><strong>Email:</strong> jechelemunez01@gmail.com</span>
+              <span>•</span>
+              <span><strong>Address:</strong> P-4 Manlamonay, Don Carlos, Bukidnon</span>
+            </div>
+          </div>
+
+          <!-- Objective -->
+          <h4 class="resume-section-heading">Objective</h4>
+          <p class="resume-objective-text">
+            To pursue a career in Information Technology, particularly in software development, where I can utilize my programming and problem-solving skills to develop effective and user-friendly applications while continuously improving my technical knowledge.
+          </p>
+
+          <!-- Professional / Academic Experience -->
+          <h4 class="resume-section-heading">Academic Experience</h4>
+          <ul class="resume-bullet-list">
+            <li>Developed software and information technology projects as part of academic requirements.</li>
+            <li>Created and tested applications using programming languages and modern development tools.</li>
+            <li>Designed and managed relational databases for academic software projects.</li>
+            <li>Performed basic troubleshooting of computer hardware, software, and system-related issues.</li>
+          </ul>
+
+          <!-- Skills Split -->
+          <h4 class="resume-section-heading">Skills</h4>
+          <div class="resume-grid-two">
+            <div class="resume-skill-col">
+              <h4>Technical / Hard Skills:</h4>
+              <ul class="resume-bullet-list">
+                <li>Programming & Software Development</li>
+                <li>Python & Java Programming</li>
+                <li>HTML5, CSS3 & JavaScript</li>
+                <li>Flask Web Framework</li>
+                <li>Relational Database Management (SQL)</li>
+                <li>Version Control (Git & GitHub)</li>
+              </ul>
+            </div>
+            <div class="resume-skill-col">
+              <h4>Soft Skills:</h4>
+              <ul class="resume-bullet-list">
+                <li>Problem Solving</li>
+                <li>Critical Thinking</li>
+                <li>Communication Skills</li>
+                <li>Teamwork & Collaboration</li>
+                <li>Time Management</li>
+                <li>Adaptability & Continuous Learning</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <h4 class="resume-section-heading">Education</h4>
+          <ul class="resume-bullet-list">
+            <li>
+              <strong>Tertiary (2023 – 2027):</strong> Bachelor of Science in Information Technology, Torres Capitol College, Inc.
+            </li>
+            <li>
+              <strong>Secondary (Graduated 2022 – 2023):</strong> Kibatang National High School
+            </li>
+            <li>
+              <strong>Elementary (Graduated 2016 – 2017):</strong> Amparo Central Elementary School
+            </li>
+          </ul>
+
+          <!-- Academic References -->
+          <h4 class="resume-section-heading">References</h4>
+          <ul class="resume-bullet-list" style="list-style: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.6rem;">
+            <li>
+              <strong>April Jean Villas</strong> – Program Head, Torres Capitol College Inc., P2B Sayre Highway, Panadtalan, Maramag, Bukidnon (09760237827)
+            </li>
+            <li>
+              <strong>David Mark Ybañez</strong> – Instructor, Torres Capitol College Inc., P2B Sayre Highway, Panadtalan, Maramag, Bukidnon (09264662436)
+            </li>
+            <li>
+              <strong>Jessie Mae C. Jusayan</strong> – Instructor, Torres Capitol College Inc., P2B Sayre Highway, Panadtalan, Maramag, Bukidnon (09971365037)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>
